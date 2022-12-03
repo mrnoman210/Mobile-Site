@@ -1,0 +1,23 @@
+.brandsName {
+    border: 3px solid black;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    /* animation: linear 3s blinker infinite; */
+  }
+  /* @keyframes blinker {
+    0%{
+      background-color: black;
+      color: white;
+    }
+    50%{
+      background-color: transparent;
+      color: black;
+    }
+    100%{
+      background-color: black;
+      color: white;
+    }
+  } */

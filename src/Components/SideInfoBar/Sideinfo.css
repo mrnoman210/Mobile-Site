@@ -1,0 +1,35 @@
+.sideinfo_main {
+  height: fit-content;
+  width: 20.1875rem;
+  padding: 20px;
+  background-color: rgb(253, 253, 91);
+  border-radius: 10px;
+}
+
+.innerslideinfo {
+  margin: auto;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+}
+.seemoreBrands_tab:active {
+  background-color: black;
+  color: white;
+}
+.seemoreBrands_tab {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) linear;
+  color: blue;
+  padding: 10px;
+}
+.innerslideinfo a {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.innerslideinfo a:hover {
+  background-color: black;
+  color: white;
+}
