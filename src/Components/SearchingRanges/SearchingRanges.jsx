@@ -1,8 +1,17 @@
 import React, { useRef, useState } from "react";
 import "./SearchingRanges.css";
-const SearchingRanges = ({ currency, specific, rangecomp, extra }) => {
-  const range = useRef(null);
-  const [displayprice, setDisplayprice] = useState(0);
+const SearchingRanges = ({
+  currency,
+  specific,
+  rangecomp,
+  extra,
+  value,
+  changestate,
+  displayprices,
+  name,
+}) => {
+  // const range = useRef(null);
+  // const [displayprice, setDisplayprice] = useState(0);
 
   return (
     <div className="specific_main">
@@ -10,16 +19,15 @@ const SearchingRanges = ({ currency, specific, rangecomp, extra }) => {
       <input
         type="range"
         id="rangeInput"
-        ref={range}
-        value={displayprice}
+        // ref={range}
+        // value={value}
         min={0}
         max={rangecomp}
-        onChange={() => {
-          setDisplayprice(range.current.value);
-        }}
+        onChange={changestate}
+        name={name}
       />
       <p name="displayrange">
-        {extra} {displayprice} {currency}
+        {extra} {displayprices} {currency}
       </p>
     </div>
   );

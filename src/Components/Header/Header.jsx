@@ -20,7 +20,7 @@ const Header = () => {
         <FaBars></FaBars>
       </label>
       <label for="" class="logoWebsite">
-       <FaMobileAlt></FaMobileAlt> Logo
+        <FaMobileAlt></FaMobileAlt> Logo
       </label>
       <ul>
         <li
@@ -28,6 +28,7 @@ const Header = () => {
           onClick={() => {
             setBgcolor("home");
           }}
+          title="Home"
         >
           <Link to={"/"} class="forLinks header_Links linkClass">
             <FaHome></FaHome> Home
@@ -38,6 +39,7 @@ const Header = () => {
           onClick={() => {
             setBgcolor("shop");
           }}
+          title="Shop"
         >
           <Link to={"/"} class="forLinks header_Links linkClass">
             <FaShoppingCart></FaShoppingCart> Shop
@@ -48,6 +50,7 @@ const Header = () => {
           onClick={() => {
             setBgcolor("contact");
           }}
+          title="Contact Us"
         >
           <Link to={"/"} class="forLinks header_Links linkClass">
             <FaAddressBook></FaAddressBook> Contact Us
@@ -58,6 +61,7 @@ const Header = () => {
           onClick={() => {
             setBgcolor("about");
           }}
+          title="About Us"
         >
           <Link to={"/aboutus"} class="forLinks header_Links linkClass">
             <FaUser></FaUser> About Us
@@ -68,6 +72,7 @@ const Header = () => {
           onClick={() => {
             setBgcolor("blog");
           }}
+          title="Blog"
         >
           <Link to={"/"} class="forLinks header_Links linkClass">
             <FaBlog></FaBlog> Blog

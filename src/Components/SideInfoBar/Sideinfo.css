@@ -5,7 +5,10 @@
   background-color: rgb(253, 253, 91);
   border-radius: 10px;
 }
-
+.buttons {
+  display: flex;
+  justify-content: center;
+}
 .innerslideinfo {
   margin: auto;
   width: 92%;

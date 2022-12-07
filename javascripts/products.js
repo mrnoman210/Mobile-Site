@@ -1,18 +1,18 @@
 export const mobiles = [
   {
-    id:1,
+    id: 1,
     name: "Samsung S21 Ultra",
     Image: "../src/Images/image1.jpg",
     price: 300000,
   },
   {
-    id:2,
+    id: 2,
     name: "Iphone 12",
     Image: "../src/Images/image2.jpg",
     price: 250000,
   },
   {
-    id:3,
+    id: 3,
     name: "Vivo X80",
     Image: "../src/Images/image3.jpg",
     price: 908000,
@@ -24,15 +24,15 @@ export const mobiles = [
     price: 25000,
   },
   {
-    id:5,
+    id: 5,
     name: "Infinix Note 2",
     Image: "../src/Images/image5.jpg",
     price: 25000,
   },
   {
-    id:6,
-    name: "samsung",
-    Image: "../src/Images/image6.jpg",
-    price: 25000,
-  }
+    id: 6,
+    name: "Oppo Find N Flip",
+    Image: "../src/Images/oppo_find_n_flip.jpeg",
+    price: "200,000",
+  },
 ];

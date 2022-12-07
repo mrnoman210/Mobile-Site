@@ -1,0 +1,22 @@
+.common_button {
+  background-color: white;
+  width: max-content;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  border-radius: 10px;
+  box-shadow: 5px 10px black;
+}
+.common_button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 10px rgb(129, 126, 126);
+}
+.common_button:active {
+  transform: translate(5px, 10px);
+  box-shadow: none;
+}

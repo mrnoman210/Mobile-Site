@@ -10,6 +10,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
+.cards_main_section{
+  display: block;
+}
 .heading_Name_card {
   font-size: 25px;
   width: max-content;
@@ -23,13 +26,39 @@
   width: 7rem;
 }
 .cardmain_div {
+  grid-template-columns: repeat(5, 2fr);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 1rem;
 }
 .Group_of_card_top {
   text-align: center;
   font-size: 3rem;
   font-weight: 100;
+}@media only screen and (max-width: 600px) {
+  .cardmain_div {
+    grid-template-columns: repeat(1, 1fr);}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cardmain_div {
+    grid-template-columns: repeat(1, 1fr);}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 922px) {
+  .cardmain_div {
+    grid-template-columns: repeat(2, 2fr);}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1172px) {
+  .cardmain_div {
+    grid-template-columns: repeat(3, 2fr);}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1550px) {
+  .cardmain_div {
+    grid-template-columns: repeat(5, 2fr);}
 }
