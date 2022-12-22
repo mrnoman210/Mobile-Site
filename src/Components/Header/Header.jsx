@@ -7,6 +7,7 @@ import {
   FaBlog,
   FaHome,
   FaMobileAlt,
+  FaNewspaper,
   FaShoppingCart,
   FaUser,
 } from "react-icons/fa";
@@ -41,8 +42,8 @@ const Header = () => {
           }}
           title="Shop"
         >
-          <Link to={"/"} class="forLinks header_Links linkClass">
-            <FaShoppingCart></FaShoppingCart> Shop
+          <Link to={"/news"} class="forLinks header_Links linkClass">
+            <FaNewspaper></FaNewspaper> News
           </Link>
         </li>
         <li
@@ -52,7 +53,7 @@ const Header = () => {
           }}
           title="Contact Us"
         >
-          <Link to={"/"} class="forLinks header_Links linkClass">
+          <Link to={"/contact-us"} class="forLinks header_Links linkClass">
             <FaAddressBook></FaAddressBook> Contact Us
           </Link>
         </li>

@@ -12,8 +12,13 @@
 .innerslideinfo {
   margin: auto;
   width: 92%;
+  margin: 100px 5px 5px 5px;
   display: flex;
   flex-direction: column;
+}
+.displayClass :hover{
+  background-color: black;
+
 }
 .seemoreBrands_tab:active {
   background-color: black;
@@ -26,13 +31,73 @@
   color: blue;
   padding: 10px;
 }
+.innerslideinfo a:hover {
+  background-color: black;
+  color: white;
+}
 .innerslideinfo a {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
   transition: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-.innerslideinfo a:hover {
-  background-color: black;
+.drawerside{
+  transform: translate(-250px,0);
+  animation: hiding 500ms forwards;
+  transition: all 2s   ;
+}
+.drawerredo{
+  transition: all 2s   ;
+    animation: hiding 500ms forwards;
+  transform: translate(0px,0);
+  
+}
+.closeSideInfo{
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  transition: ease-in-out 2s linear;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 10px;
+  color: purple;
+  cursor: pointer;
+}
+.closeSideInfo:hover{
   color: white;
+  animation: closesideborder 5s linear infinite;
+  background: black;
+
+}
+@keyframes closesideborder {
+  0%{
+    border-top-right-radius: 10px;
+  }
+  25%{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:10px;
+  }
+  50%{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  75%{
+    border-bottom-left-radius: 0; 
+    border-top-left-radius: 10px; 
+  }
+  100%{
+    border-top-left-radius: 0; 
+    border-top-right-radius: 10px;
+  }
+}
+.hidden{
+  animation: hiding 200ms forwards;
+}
+@keyframes hiding {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
