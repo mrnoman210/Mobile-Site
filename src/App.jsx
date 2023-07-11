@@ -8,6 +8,7 @@ import Aboutus from "./Screens/Aboutus/Aboutus";
 import Advance_Search from "./Screens/Advanve_Search/Advance_Search";
 import News from "./Screens/News/News";
 import Contactsus from "./Screens/ContactUs/Contactsus";
+import ViewPage from "./Components/ViewPage/ViewPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path={"/aboutus"} element={<Aboutus />} />
           <Route path={"/news"} element={<News />} />
           <Route path={"/contact-us"} element={<Contactsus />} />
+          <Route path={"/:id"} element={<ViewPage />} />
           <Route path={"/advanceSearch"} element={<Advance_Search />} />
         </Routes>
       </BrowserRouter>
